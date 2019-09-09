@@ -1,0 +1,29 @@
+version: "3"
+services:
+  altv-openrp:
+    build: .
+    image: openface/altv-openrp:latest
+    container_name: altv-openrp
+    environment:
+      - NAME=Dockerized Open RP
+      - DESCRIPTION=Demonstration Purposes Only
+      - PLAYERS=1000
+      - ANNOUNCE=false
+      - TOKEN=
+      - WEBSITE=twitch.tv/stuykgaming
+      - LANGUAGE=en
+      - DEBUG=true
+    ports:
+      - "7788:7788"
+      - "7788:7788/udp"
+  db:
+    image: "postgres:11"
+    container_name: db
+    environment:
+      - POSTGRES_DB=altv
+      - POSTGRES_USER=postgres
+      - POSTGRES_PASSWORD=postgres
+    volumes:
+      - db_data:/var/lib/postgresql/data
+volumes:
+  db_data:
