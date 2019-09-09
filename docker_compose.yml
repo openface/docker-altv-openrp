@@ -16,6 +16,8 @@ services:
     ports:
       - "7788:7788"
       - "7788:7788/udp"
+    depends_on:
+      - db
   db:
     image: "postgres:11"
     container_name: db
