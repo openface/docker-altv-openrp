@@ -22,3 +22,4 @@ are passed down from the docker-compose environment variables.
 ## References
 - https://altv.mp
 - https://github.com/team-stuyk-alt-v/altV-Open-Roleplay
+- https://docs.docker.com/compose/
