@@ -6,7 +6,7 @@ The file "docker_compose.yml" creates the containers. Configure it as
 needed, and run with:
 
 ```
-docker-compose -f docker_compose.yml up
+docker-compose -f docker-compose.yml up
 ```
 
 To build the container, simply pass --build option to the above command.
