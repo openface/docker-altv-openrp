@@ -1,0 +1,8 @@
+{
+    "type": "postgres",
+    "username": "${DB_USERNAME}",
+    "password": "${DB_PASSWORD}",
+    "address": "db",
+    "port": 5432,
+    "dbname": "altv"
+}

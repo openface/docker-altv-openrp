@@ -3,7 +3,7 @@ host: 0.0.0.0
 port: 7788
 players: ${PLAYERS}
 announce: ${ANNOUNCE}
-gamemode: OpenRP
+gamemode: ORP
 website: ${WEBSITE}
 language: ${LANGUAGE}
 description: ${DESCRIPTION}
@@ -11,3 +11,4 @@ modules: [ node-module ]
 resources: [ orp ]
 token: ${TOKEN}
 debug: ${DEBUG}
+streamingDistance: 300
